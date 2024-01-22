@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Book {
+            constructor(name, author) {
+                this.name = name;
+                this.author = author;
+            }
+        }
+        let books = [
+            book1 = new Book("haryporter", "khachung"),
+            book2 = new Book("Dragonball", "kimdong"),
+        ];
+        let search = prompt("Nhập tên tác giả từ bàn phím: ");
+        let check = books.find(book => book.author == search);
+        if (check) {
+            console.log(check);
+        } else {
+            console.log("Không tìm thấy sách");
+        }
+
+    </script>
+</body>
+
+</html>

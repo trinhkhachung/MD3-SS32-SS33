@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let phoneBook = {
+                contract1: {
+                    name: "hung",
+                    phone: "123-456-789",
+                    email: "hung@meomeo.com",
+                },
+                contract2: {
+                    name: "dung",
+                    phone: "987-654-321",
+                    email: "dung@example.com",
+                },
+            }
+            for (let key in phoneBook) {
+                console.log(`Name: ${phoneBook[key].name},
+                Phone: ${phoneBook[key].phone},
+                Email: ${phoneBook[key].email},
+                -------------------------`);
+            }
+
+    </script>
+</body>
+</html>

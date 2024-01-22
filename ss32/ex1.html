@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Information(id, name, phone, address) {
+            this.id = id;
+            this.name = name;
+            this.phone = phone;
+            this.address = address;
+        }
+        let person = new Information(+prompt("Nhập ID"), prompt("Nhập tên"), +prompt("Nhập số điện thoại"), prompt("Nhập địa chỉ"));
+        console.log(`ID: ${person.id}
+        Tên: ${person.name}
+        Số điện thoại: ${person.phone}
+        Địa chỉ: ${person.address}`);
+    </script>
+</body>
+
+</html>

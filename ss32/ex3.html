@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+            constructor() {
+                this.id = null;
+                this.name = null;
+            }
+        }
+        let n = prompt("mời nhập số lg sv");
+        let students = [];
+        for (let i = 0; i < n; i++) {
+            let student = new Student();
+            student.id = i + 1;
+            student.name = prompt(`sinh viên thứ : ${i + 1}:`);
+            students.push(student);
+        }
+        for (let i = 0; i < students.length; i++) {
+            console.log(`id: ${students[i].id}
+            Tên: ${students[i].name}`);
+        }
+
+    </script>
+</body>
+
+</html>

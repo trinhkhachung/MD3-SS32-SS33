@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Product(id, name, price, quaniti) {
+            this.id = id;
+            this.name = name;
+            this.price = price;
+            this.quaniti = quaniti;
+        }
+        let product1 = new Product(1, "sanpham", 14, 98);
+        for (let property in product1) {
+            if (product1.hasOwnProperty(property)) {
+                console.log(`${property}: ${product1[property]}`);
+            }
+        }
+    </script>
+</body>
+
+</html>

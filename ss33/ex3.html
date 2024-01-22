@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var phone_books = {
+                contact1: {
+                    name: "hung",
+                    phone: "123455678",
+                    email: "hung@gmal.com",
+                    print_info: function () {
+                        console.log(this);
+                    },
+                },
+                contact2: {
+                    name: "binh",
+                    phone: "123455678",
+                    email: "binh@gmal.com",
+                    print_info: function () {
+                        console.log(this);
+                    },
+                },
+            };
+            phone_books.contact1.print_info();
+            phone_books.contact2.print_info();
+        </script>
+</body>
+</html>

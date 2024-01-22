@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        button {
+            width: 200px;
+            height: 100px;
+            color: black;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="add_book()">them sach</button>
+    <button onclick="check()">kiem tra sach</button>
+    <script>
+        let library = [];
+        function add_book() {
+            var book = {
+                title: "",
+                author: "",
+                published_year: "",
+                borrow: "",
+            };
+            book.title = prompt("nhap tieu de");
+            book.author = prompt("nhap tac gia");
+            book.published_year = prompt("nhap nam xuat ban");
+            book.borrow = +prompt("nhap trang thai");
+            library.push(book);
+            console.log(library);
+        }
+        function check() {
+            let name = prompt("nhap ten sach can tra cuu");
+            console.log(name);
+            for (let i = 0; i < library.length; i++) {
+                if (library[i].title === name) {
+                    if (library[i].borrow === 0) {
+                        console.log("co the muon");
+                        return 0;
+                    }
+                }
+            }
+            console.log("khong the muon");
+        }
+    </script>
+</body>
+
+</html>
